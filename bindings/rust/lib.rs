@@ -7,7 +7,7 @@
 //! let code = r#"
 //! "#;
 //! let mut parser = tree_sitter::Parser::new();
-//! let language = tree_sitter_epics-cmd::LANGUAGE;
+//! let language = tree_sitter_epics_cmd::LANGUAGE;
 //! parser
 //!     .set_language(&language.into())
 //!     .expect("Error loading EpicsCmd parser");
@@ -21,11 +21,11 @@
 use tree_sitter_language::LanguageFn;
 
 extern "C" {
-    fn tree_sitter_epics-cmd() -> *const ();
+    fn tree_sitter_epics_cmd() -> *const ();
 }
 
 /// The tree-sitter [`LanguageFn`] for this grammar.
-pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_epics-cmd) };
+pub const LANGUAGE: LanguageFn = unsafe { LanguageFn::from_raw(tree_sitter_epics_cmd) };
 
 /// The content of the [`node-types.json`] file for this grammar.
 ///
@@ -34,7 +34,7 @@ pub const NODE_TYPES: &str = include_str!("../../src/node-types.json");
 
 // NOTE: uncomment these to include any queries that this grammar contains:
 
-// pub const HIGHLIGHTS_QUERY: &str = include_str!("../../queries/highlights.scm");
+ pub const HIGHLIGHTS_QUERY: &str = include_str!("../../queries/highlights.scm");
 // pub const INJECTIONS_QUERY: &str = include_str!("../../queries/injections.scm");
 // pub const LOCALS_QUERY: &str = include_str!("../../queries/locals.scm");
 // pub const TAGS_QUERY: &str = include_str!("../../queries/tags.scm");

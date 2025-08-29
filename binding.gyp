@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "tree_sitter_epics-cmd_binding",
+      "target_name": "tree_sitter_epics_cmd_binding",
       "dependencies": [
         "<!(node -p \"require('node-addon-api').targets\"):node_addon_api_except",
       ],
