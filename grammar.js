@@ -7,7 +7,7 @@
 /// <reference types="tree-sitter-cli/dsl" />
 // @ts-check
 
-// Mostly from epics-base/modules/libcom/src/iocsh/iocsh.cpp
+// Mostly from 'epics-base/modules/libcom/src/iocsh/iocsh.cpp'
 
 module.exports = grammar({
   name: "epics_cmd",
