@@ -2,13 +2,13 @@
   "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
   "grammars": [
     {
-      "name": "epics-cmd",
+      "name": "epics_cmd",
       "path": ".",
       "scope": "source.epics-cmd",
       "file-types": [
-        "epics-cmd"
+        "cmd"
       ],
-      "injection-regex": "^epics-cmd$",
+      "injection-regex": "^(epics-)?cmd$",
       "highlights": "queries/highlights.scm"
     }
   ],
@@ -20,8 +20,17 @@
     "license": "MIT",
     "authors": [
       {
-        "name": "Rémi NICOLE"
+        "name": "Rémi NICOLE",
+        "email": "remi.nicole@cea.fr"
       }
     ]
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
   }
 }
