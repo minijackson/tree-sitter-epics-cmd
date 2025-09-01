@@ -1,7 +1,7 @@
 {
   "name": "tree-sitter-epics-cmd",
   "version": "0.1.2",
-  "description": "Grammar for EPICS' .cmd files",
+  "description": "tree-sitter grammar for EPICS' .cmd files",
   "repository": "https://github.com/minijackson/tree-sitter-epics-cmd",
   "license": "MIT",
   "author": {
@@ -38,7 +38,9 @@
     "tree-sitter": "^0.25.0"
   },
   "peerDependenciesMeta": {
-    "tree-sitter": {}
+    "tree-sitter": {
+      "optional": true
+    }
   },
   "scripts": {
     "install": "node-gyp-build",
