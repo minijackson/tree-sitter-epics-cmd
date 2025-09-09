@@ -14,8 +14,8 @@ def _get_query(name, file):
 def __getattr__(name):
     if name == "HIGHLIGHTS_QUERY":
         return _get_query("HIGHLIGHTS_QUERY", "highlights.scm")
-    # if name == "INJECTIONS_QUERY":
-    #     return _get_query("INJECTIONS_QUERY", "injections.scm")
+    if name == "INJECTIONS_QUERY":
+        return _get_query("INJECTIONS_QUERY", "injections.scm")
     # if name == "LOCALS_QUERY":
     #     return _get_query("LOCALS_QUERY", "locals.scm")
     # if name == "TAGS_QUERY":
