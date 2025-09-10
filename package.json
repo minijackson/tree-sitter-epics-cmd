@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-epics-cmd",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "tree-sitter grammar for EPICS' .cmd files",
   "repository": "https://github.com/minijackson/tree-sitter-epics-cmd",
   "license": "MIT",

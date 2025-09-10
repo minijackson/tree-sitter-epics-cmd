@@ -4,7 +4,7 @@ endif
 
 LANGUAGE_NAME := tree-sitter-epics-cmd
 HOMEPAGE_URL := https://github.com/minijackson/tree-sitter-epics-cmd
-VERSION := 0.1.5
+VERSION := 0.1.6
 
 # repository
 SRC_DIR := src
