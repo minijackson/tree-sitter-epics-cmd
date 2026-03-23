@@ -11,22 +11,30 @@
             "type": "CHOICE",
             "members": [
               {
-                "type": "SYMBOL",
-                "name": "comment"
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "comment"
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "command"
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "source"
+                  }
+                ]
               },
               {
-                "type": "SYMBOL",
-                "name": "command"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "source"
+                "type": "BLANK"
               }
             ]
           },
           {
-            "type": "STRING",
-            "value": "\n"
+            "type": "PATTERN",
+            "value": "\\r|\\r\\n|\\n"
           }
         ]
       }
@@ -477,7 +485,7 @@
   "extras": [
     {
       "type": "PATTERN",
-      "value": "\\s"
+      "value": "[ \\t]"
     },
     {
       "type": "SYMBOL",

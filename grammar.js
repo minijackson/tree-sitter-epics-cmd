@@ -12,11 +12,11 @@
 module.exports = grammar({
   name: "epics_cmd",
 
-  extras: ($) => [/\s/, $.macro_expansion],
+  extras: ($) => [/[ \t]/, $.macro_expansion],
 
   rules: {
     source_file: ($) =>
-      repeat(seq(choice($.comment, $.command, $.source), "\n")),
+      repeat(seq(optional(choice($.comment, $.command, $.source)), /\r|\r\n|\n/)),
 
     comment: ($) => seq("#", /.*/),
 
