@@ -2,7 +2,10 @@
   "name": "tree-sitter-epics-cmd",
   "version": "0.1.6",
   "description": "tree-sitter grammar for EPICS' .cmd files",
-  "repository": "https://github.com/minijackson/tree-sitter-epics-cmd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minijackson/tree-sitter-epics-cmd.git"
+  },
   "license": "MIT",
   "author": {
     "name": "Rémi NICOLE",
@@ -32,6 +35,7 @@
   },
   "devDependencies": {
     "prebuildify": "^6.0.1",
+    "tree-sitter": "^0.25.0",
     "tree-sitter-cli": "^0.25.8"
   },
   "peerDependencies": {
